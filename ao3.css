@@ -1,0 +1,103 @@
+html {
+  font-size: 110%;
+}
+
+#header .primary > li:first-of-type {
+  margin-left: 2.08em;
+}
+
+#greeting p.icon a {
+  border-bottom: 0;
+}
+
+#local-flash {
+  margin: 0.643em;
+}
+
+#local-flash[hidden],
+#chapterPreviewSection[hidden],
+#chapterEditFields[hidden] {
+  display: none;
+}
+
+.required-info-banner {
+  box-shadow: none;
+  color: #900;
+}
+
+.rtf-html-switch {
+  margin: 0 0 0.643em;
+}
+
+.rtf-html-instructions {
+  margin-top: 0;
+}
+
+.rtf-html-switch .current {
+  font-weight: 700;
+}
+
+.rtf-html-field .tox-tinymce {
+  border: 1px solid #bbb;
+  box-shadow: inset 0 1px 2px #ccc;
+}
+
+#workskin-editor textarea {
+  font-family: Consolas, "Lucida Console", Monaco, monospace;
+  min-height: 36em;
+  height: 36em;
+}
+
+#previewpane {
+  margin-top: 0.643em;
+}
+
+#previewChapterMount blockquote.userstuff,
+#previewChapterMount .userstuff.module {
+  margin-top: 0.643em;
+}
+
+/* MEDIA: only screen and (max-width: 62em), handheld ENDMEDIA */
+@media only screen and (max-width: 62em) {
+  #workskin-editor textarea,
+  textarea.large#content {
+    min-height: 24em;
+    height: 24em;
+  }
+
+  .post .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35em;
+  }
+
+  .post .actions > li {
+    margin: 0;
+  }
+}
+
+/* MEDIA: only screen and (max-width: 42em), handheld ENDMEDIA */
+@media only screen and (max-width: 42em) {
+  #header .primary > li:first-of-type {
+    margin-left: 0;
+  }
+
+  #main .navigation.actions {
+    margin-inline: 0;
+  }
+
+  #workskin-editor textarea,
+  textarea.large#content {
+    min-height: 16em;
+    height: 16em;
+  }
+
+  .post .actions > li {
+    display: block;
+    width: 100%;
+  }
+
+  .post .actions input[type="submit"] {
+    width: 100%;
+  }
+}

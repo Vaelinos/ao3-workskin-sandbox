@@ -1,0 +1,138 @@
+/* Local calibration used by the original chapter page mock. */
+html {
+  font-size: 110%;
+}
+
+#header .primary > li:first-of-type {
+  margin-left: 2.08em;
+}
+
+#greeting p.icon a {
+  border-bottom: 0;
+}
+
+body.creator-style-off #workskin {
+  opacity: 0.82;
+}
+
+/* Work meta: force a strict left-label / right-value layout. */
+dl.work.meta.group {
+  display: grid;
+  grid-template-columns: 24% minmax(0, 76%);
+  row-gap: 0;
+}
+
+dl.work.meta.group > dt,
+dl.work.meta.group > dd {
+  float: none;
+  clear: none;
+  width: auto;
+  margin: 0 0 0.55em 0;
+}
+
+dl.work.meta.group > dt {
+  grid-column: 1;
+  text-align: left;
+  min-width: 0;
+  box-sizing: border-box;
+  padding-right: 0.75em;
+}
+
+dl.work.meta.group > dd {
+  grid-column: 2;
+  text-align: left;
+}
+
+dl.work.meta.group > dd.stats {
+  margin-bottom: 0;
+}
+
+dl.work.meta .stats dl dt,
+dl.work.meta .stats dl dd {
+  margin-inline: 0 0.45em;
+}
+
+.preview-feedback-actions {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0.5em;
+  margin: 1.15em 0 0.7em;
+  padding: 0;
+  list-style: none;
+}
+
+.preview-feedback-actions > li {
+  margin: 0;
+}
+
+.preview-feedback-actions form {
+  margin: 0;
+}
+
+.preview-feedback-actions #kudo_submit[disabled] {
+  opacity: 0.7;
+}
+
+.preview-feedback-actions .preview-edit-action {
+  margin-left: auto;
+}
+
+#kudos_message {
+  margin: 0.35em 0 0.8em;
+}
+
+#comments {
+  margin-top: 1.5em;
+  padding-top: 0.35em;
+}
+
+/* MEDIA: only screen and (max-width: 62em), handheld ENDMEDIA */
+@media only screen and (max-width: 62em) {
+  dl.work.meta.group {
+    grid-template-columns: 30% minmax(0, 70%);
+  }
+
+  .preview-feedback-actions {
+    flex-wrap: wrap;
+  }
+}
+
+/* MEDIA: only screen and (max-width: 42em), handheld ENDMEDIA */
+@media only screen and (max-width: 42em) {
+  #header .primary > li:first-of-type {
+    margin-left: 0;
+  }
+
+  dl.work.meta.group {
+    display: block;
+  }
+
+  dl.work.meta.group > dt,
+  dl.work.meta.group > dd {
+    display: block;
+    margin: 0 0 0.4em;
+    padding-right: 0;
+  }
+
+  dl.work.meta.group > dd {
+    margin-bottom: 0.75em;
+  }
+
+  .preview-feedback-actions {
+    gap: 0.35em;
+  }
+
+  .preview-feedback-actions > li {
+    width: 100%;
+  }
+
+  .preview-feedback-actions #kudo_submit,
+  .preview-feedback-actions a {
+    display: inline-block;
+  }
+
+  .preview-feedback-actions .preview-edit-action {
+    margin-left: 0;
+  }
+}

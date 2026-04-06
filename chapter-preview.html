@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AO3 Local Chapter Page</title>
+  <link rel="stylesheet" href="./site/2.0/01-core.css">
+  <link rel="stylesheet" href="./site/2.0/02-elements.css">
+  <link rel="stylesheet" href="./site/2.0/03-region-header.css">
+  <link rel="stylesheet" href="./site/2.0/04-region-dashboard.css">
+  <link rel="stylesheet" href="./site/2.0/05-region-main.css">
+  <link rel="stylesheet" href="./site/2.0/06-region-footer.css">
+  <link rel="stylesheet" href="./site/2.0/07-interactions.css">
+  <link rel="stylesheet" href="./site/2.0/08-actions.css">
+  <link rel="stylesheet" href="./site/2.0/09-roles-states.css">
+  <link rel="stylesheet" href="./site/2.0/10-types-groups.css">
+  <link rel="stylesheet" href="./site/2.0/11-group-listbox.css">
+  <link rel="stylesheet" href="./site/2.0/12-group-meta.css">
+  <link rel="stylesheet" href="./site/2.0/13-group-blurb.css">
+  <link rel="stylesheet" href="./site/2.0/14-group-preface.css">
+  <link rel="stylesheet" href="./site/2.0/15-group-comments.css">
+  <link rel="stylesheet" href="./site/2.0/16-zone-system.css">
+  <link rel="stylesheet" href="./site/2.0/17-zone-home.css">
+  <link rel="stylesheet" href="./site/2.0/18-zone-searchbrowse.css">
+  <link rel="stylesheet" href="./site/2.0/19-zone-tags.css">
+  <link rel="stylesheet" href="./site/2.0/20-zone-translation.css">
+  <link rel="stylesheet" href="./site/2.0/21-userstuff.css">
+  <link rel="stylesheet" href="./site/2.0/22-system-messages.css">
+  <link rel="stylesheet" href="./site/2.0/23-role-translator.css">
+  <link rel="stylesheet" href="./site/2.0/24-role-admin.css">
+  <link rel="stylesheet" href="./site/2.0/25-media-midsize.css">
+  <link rel="stylesheet" href="./site/2.0/26-media-narrow.css">
+  <link rel="stylesheet" href="./chapter-preview.css">
+</head>
+<body class="logged-in javascript">
+  <div id="outer" class="wrapper">
+    <ul id="skiplinks"><li><a href="#main">Main Content</a></li></ul>
+
+    <header id="header" class="region">
+      <h1 class="heading">
+        <a href="#">
+          <span>Archive of Our Own</span>
+          <img src="./images/ao3_logos/logo_42.png" alt="AO3 logo" class="logo">
+        </a>
+      </h1>
+
+      <nav id="greeting" aria-label="User Navigation">
+        <ul class="user navigation actions">
+          <li><a id="previewGreetingLink" href="#">Hi, <span id="previewGreetingName">Tester</span>!</a></li>
+          <li><a href="#">Post</a></li>
+          <li><a href="#">Log Out</a></li>
+        </ul>
+        <p class="icon"><a href="#" aria-label="User icon"><img src="./images/skins/iconsets/default/icon_user.png" class="icon" alt=""></a></p>
+      </nav>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="primary navigation actions">
+          <li class="dropdown"><a href="#">Fandoms</a></li>
+          <li class="dropdown"><a href="#">Browse</a></li>
+          <li class="dropdown"><a href="#">Search</a></li>
+          <li class="dropdown"><a href="#">About</a></li>
+          <li class="search">
+            <form id="search" class="search" role="search">
+              <fieldset>
+                <p>
+                  <label class="landmark" for="site_search">Search</label>
+                  <input id="site_search" class="text" type="text" value="">
+                  <span class="submit actions"><input class="button" type="submit" value="Search"></span>
+                </p>
+              </fieldset>
+            </form>
+          </li>
+        </ul>
+      </nav>
+      <div class="clear"></div>
+    </header>
+
+    <div id="inner" class="wrapper">
+      <div id="main" class="works-show region" role="main">
+        <ul class="landmark skip">
+          <li><a name="top">&nbsp;</a></li>
+          <li><a href="#work">Skip header</a></li>
+        </ul>
+
+        <div class="work">
+          <h3 class="landmark heading">Actions</h3>
+          <ul class="work navigation actions">
+            <li class="chapter entire"><a href="#workskin">Entire Work</a></li>
+            <li class="chapter next"><a href="#previewChapter">Next Chapter &#8594;</a></li>
+            <li class="chapter"><a href="#previewChapter">Chapter Index &#8595;</a></li>
+            <li class="bookmark"><a href="./index.html">Edit Draft</a></li>
+            <li class="mark"><a href="#">Mark for Later</a></li>
+            <li class="comments" id="show_comments_link_top"><a id="toggleCommentsTop" href="#comments">Comments</a></li>
+            <li class="style"><a id="toggleStyle" href="#workskin">Hide Creator's Style</a></li>
+            <li class="share"><a href="#">Share</a></li>
+            <li class="subscribe"><a href="#">Subscribe</a></li>
+            <li class="download"><a href="#">Download &#8595;</a></li>
+          </ul>
+
+          <h3 class="landmark heading">Work Header</h3>
+          <div class="wrapper">
+            <dl class="work meta group">
+              <dt class="rating tags">Rating:</dt>
+              <dd class="rating tags">
+                <ul id="previewRatingList" class="commas"><li>Not Rated</li></ul>
+              </dd>
+
+              <dt class="warning tags">Archive Warning:</dt>
+              <dd class="warning tags">
+                <ul id="previewWarningList" class="commas"><li>No Archive Warnings Apply</li></ul>
+              </dd>
+
+              <dt class="fandom tags">Fandom:</dt>
+              <dd class="fandom tags">
+                <ul id="previewFandomList" class="commas"><li>No Fandom</li></ul>
+              </dd>
+
+              <dt id="previewCategoryLabel" class="category tags" hidden>Category:</dt>
+              <dd id="previewCategoryValue" class="category tags" hidden>
+                <ul id="previewCategoryList" class="commas"></ul>
+              </dd>
+
+              <dt id="previewRelationshipLabel" class="relationship tags" hidden>Relationship:</dt>
+              <dd id="previewRelationshipValue" class="relationship tags" hidden>
+                <ul id="previewRelationshipList" class="commas"></ul>
+              </dd>
+
+              <dt id="previewCharacterLabel" class="character tags" hidden>Character:</dt>
+              <dd id="previewCharacterValue" class="character tags" hidden>
+                <ul id="previewCharacterList" class="commas"></ul>
+              </dd>
+
+              <dt class="additional tags">Additional Tags:</dt>
+              <dd class="additional tags">
+                <ul id="previewFreeformList" class="commas"><li>HTML</li><li>CSS</li><li>Guide</li><li>Fanwork Research &amp; Reference Guides</li></ul>
+              </dd>
+
+              <dt class="language">Language:</dt>
+              <dd id="previewLanguageValue" class="language">English</dd>
+
+              <dt class="stats">Stats:</dt>
+              <dd class="stats">
+                <dl>
+                  <dt>Published:</dt><dd>2025-12-31</dd>
+                  <dt>Completed:</dt><dd>2026-01-01</dd>
+                  <dt>Words:</dt><dd id="previewWordCount">0</dd>
+                  <dt>Chapters:</dt><dd>3/3</dd>
+                  <dt>Comments:</dt><dd>8</dd>
+                  <dt>Kudos:</dt><dd id="previewKudosCount">11</dd>
+                  <dt>Bookmarks:</dt><dd>7</dd>
+                  <dt>Hits:</dt><dd>145</dd>
+                </dl>
+              </dd>
+            </dl>
+          </div>
+
+          <style id="previewWorkskinStyle"></style>
+          <div id="workskin">
+            <div class="preface group">
+              <h2 id="previewWorkTitle" class="title heading">How to Make Show/Hide Buttons for Your Fics (including Homestuck Pesterlog-Style)</h2>
+              <h3 class="byline heading"><a id="previewByline" href="#">buttertartz</a></h3>
+              <div id="previewSummaryModule" class="summary module">
+                <h3 class="heading">Summary:</h3>
+                <blockquote id="previewSummaryBody" class="userstuff">
+                  <p>This is a tutorial on how to use CSS skins and HTML on AO3 to make buttons that show/hide a portion of text, similar to Pesterlogs from Homestuck.</p>
+                </blockquote>
+              </div>
+              <div id="previewNotesModule" class="notes module" hidden>
+                <h3 class="heading">Notes:</h3>
+                <blockquote id="previewNotesBody" class="userstuff"></blockquote>
+              </div>
+            </div>
+
+            <div id="chapters">
+              <div class="chapter" id="previewChapter">
+                <div class="userstuff module" role="article">
+                  <h3 class="landmark heading" id="work">Chapter Text</h3>
+                  <div id="previewChapterBody">
+                    <p>This local page is intentionally styled to match AO3 chapter UI. Continue writing your chapter content here.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="previewEndnotesModule" class="chapter preface group" hidden>
+              <div class="end notes module">
+                <h3 class="heading">Notes:</h3>
+                <blockquote id="previewEndnotesBody" class="userstuff"></blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="comments_placeholder"></div>
+        <ul class="actions preview-feedback-actions" aria-label="Reader Feedback Actions">
+          <li class="kudos">
+            <form id="new_kudo" action="#" method="post">
+              <input type="hidden" name="kudo[commentable_id]" value="1">
+              <input type="hidden" name="kudo[commentable_type]" value="Work">
+              <input id="kudo_submit" type="submit" value="Kudos ♥">
+            </form>
+          </li>
+          <li class="comments" id="show_comments_link_feedback">
+            <a id="toggleCommentsFeedback" href="#comments">Comments</a>
+          </li>
+          <li class="bookmark preview-edit-action">
+            <a href="./index.html">Edit</a>
+          </li>
+        </ul>
+        <div id="kudos_message"></div>
+        <section id="comments" class="comments region" hidden>
+          <h3 class="heading">Comments:</h3>
+          <ol class="thread">
+            <li class="comment odd">
+              <h4 class="heading byline">reader_01</h4>
+              <blockquote class="userstuff"><p>The shifting margin line is so good. Subscribed.</p></blockquote>
+            </li>
+            <li class="comment even">
+              <h4 class="heading byline">reader_02</h4>
+              <blockquote class="userstuff"><p>Now this feels much closer to AO3 chapter UI.</p></blockquote>
+            </li>
+          </ol>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <script src="./chapter-preview.js"></script>
+</body>
+</html>
