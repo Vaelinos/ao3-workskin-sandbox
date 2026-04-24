@@ -1,1 +1,22 @@
 examples/
+
+# Dependencies / build output
+node_modules/
+dist/
+build/
+out/
+coverage/
+.cache/
+.turbo/
+.parcel-cache/
+.next/
+
+# Logs / temp
+*.log
+tmp/
+temp/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp

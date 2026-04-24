@@ -43,10 +43,16 @@ This project is implemented as a localized extension built on top of AO3's offic
 ## Quick Start
 
 1. Clone or download this repository
-2. Open `ao3-workskin-sandbox/index.html`
-3. Use it directly in your browser
+2. Double-click `open-local.bat` (recommended)
+3. Your browser will auto-open `http://127.0.0.1:8000/index.html`
+
+Fallback:
+
+1. Run `py -m http.server 8000` in the project folder
+2. Open `http://127.0.0.1:8000/index.html` in your browser
 
 > Note: Rich Text depends on TinyMCE CDN. In offline mode, it falls back to HTML editing.
+> Note: `localhost` always means the current machine, so each user must run `open-local.bat` on their own computer.
 
 ---
 

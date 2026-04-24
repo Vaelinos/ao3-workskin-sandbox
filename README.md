@@ -43,10 +43,16 @@
 ## 快速开始
 
 1. 克隆或下载本仓库
-2. 打开 `ao3-workskin-sandbox/index.html`
-3. 直接在浏览器使用
+2. 双击 `open-local.bat`（推荐）
+3. 浏览器会自动打开 `http://127.0.0.1:8000/index.html`
+
+备用方式：
+
+1. 在项目目录手动运行 `py -m http.server 8000`
+2. 浏览器打开 `http://127.0.0.1:8000/index.html`
 
 > 说明：Rich Text 依赖 TinyMCE CDN。离线环境下会退化为 HTML 输入模式。
+> 说明：`localhost` 只指“你当前这台电脑”，每个人都要在自己电脑上运行 `open-local.bat`。
 
 ---
 

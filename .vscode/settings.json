@@ -1,0 +1,30 @@
+{
+  "git.autoRepositoryDetection": "openEditors",
+  "git.openRepositoryInParentFolders": "never",
+  "git.untrackedChanges": "mixed",
+  "search.followSymlinks": false,
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/dist/**": true,
+    "**/build/**": true,
+    "**/out/**": true,
+    "**/coverage/**": true,
+    "**/.cache/**": true,
+    "**/.turbo/**": true,
+    "**/.parcel-cache/**": true,
+    "**/.next/**": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/out": true,
+    "**/coverage": true,
+    "**/.cache": true,
+    "**/.turbo": true,
+    "**/.parcel-cache": true,
+    "**/.next": true
+  }
+}
