@@ -46,6 +46,8 @@
 2. 双击 `open-local.bat`（推荐）
 3. 浏览器会自动打开 `http://127.0.0.1:8000/index.html`
 
+`open-local.bat` 会优先使用 Python；如果未安装 Python，会自动回退到 Windows PowerShell 内置静态服务器。
+
 备用方式：
 
 1. 在项目目录手动运行 `py -m http.server 8000`

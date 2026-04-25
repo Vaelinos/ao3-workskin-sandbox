@@ -46,6 +46,8 @@ This project is implemented as a localized extension built on top of AO3's offic
 2. Double-click `open-local.bat` (recommended)
 3. Your browser will auto-open `http://127.0.0.1:8000/index.html`
 
+`open-local.bat` prefers Python; if Python is not installed, it automatically falls back to a built-in Windows PowerShell static server.
+
 Fallback:
 
 1. Run `py -m http.server 8000` in the project folder
