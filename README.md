@@ -2,22 +2,35 @@
 
 # AO3 Workskin Sandbox
 
-> AO3 风格本地编辑与预览沙盒，专门用于快速测试 workskin 与章节排版效果。
+> AO3 风格编辑与预览沙盒，可在本地运行，也可直接在 GitHub Pages 在线使用。
 
-[![Status](https://img.shields.io/badge/status-local%20demo-blue)]()
+[![Status](https://img.shields.io/badge/status-online%20available-brightgreen)](https://nymrarin.github.io/ao3-workskin-sandbox/)
 [![Stack](https://img.shields.io/badge/stack-HTML%2FCSS%2FJS-orange)]()
 [![Storage](https://img.shields.io/badge/storage-localStorage-green)]()
 [![Responsive](https://img.shields.io/badge/responsive-62em%20%2F%2042em-purple)]()
 
 <br>
 
-这是一个面向 AO3 作者的本地工具。  
-当 AO3 崩了、暂时无法登录，或你不想反复在线改文时，可以先在本地完成编辑并验证 workskin 效果，再决定是否发布。
+这是一个面向 AO3 作者的轻量工具。  
+当 AO3 崩了、暂时无法登录，或你不想反复在线改文时，可以先在线试用或在本地完成编辑，并验证 workskin 效果，再决定是否发布。
 本项目基于 AO3 官方在 GitHub 发布的开源代码体系进行本地化整理与扩展实现，用于个人创作测试场景。
 
-[功能概览](#功能概览) · [快速开始](#快速开始) · [使用流程](#使用流程) · [与 AO3 的差异](#与-ao3-的差异) · [项目结构](#项目结构) · [English](README_EN.md)
+[在线使用](#在线使用) · [功能概览](#功能概览) · [快速开始](#快速开始) · [使用流程](#使用流程) · [与 AO3 的差异](#与-ao3-的差异) · [项目结构](#项目结构) · [English](README_EN.md)
 
 </div>
+
+---
+
+## 在线使用
+
+- 直接打开：<https://nymrarin.github.io/ao3-workskin-sandbox/>
+- 预览页入口：<https://nymrarin.github.io/ao3-workskin-sandbox/chapter-preview.html>
+
+说明：
+
+- GitHub Pages 版本可直接在浏览器里使用，不需要先下载仓库。
+- 草稿仍然保存在你当前浏览器的 `localStorage` 里；换浏览器、清缓存或换设备后不会自动同步。
+- `Rich Text` 依赖 TinyMCE CDN，因此在线版通常可正常加载；如果网络拦截 CDN，会自动退化为 HTML 编辑模式。
 
 ---
 
@@ -109,6 +122,6 @@ ao3-workskin-sandbox/
 
 ## 注意事项
 
-- 本项目是本地 demo，不隶属于 AO3 官方。
+- 本项目支持本地运行和 GitHub Pages 在线使用，不隶属于 AO3 官方。
 - 草稿存储在浏览器 localStorage，清缓存或换浏览器后草稿不可见。
 - 建议保留你的原始文稿备份。

@@ -2,9 +2,9 @@
 
 # AO3 Workskin Sandbox
 
-> A local AO3-style editing and preview sandbox for quickly testing workskin behavior.
+> An AO3-style editing and preview sandbox that works both locally and directly on GitHub Pages.
 
-[![Status](https://img.shields.io/badge/status-local%20demo-blue)]()
+[![Status](https://img.shields.io/badge/status-online%20available-brightgreen)](https://nymrarin.github.io/ao3-workskin-sandbox/)
 [![Stack](https://img.shields.io/badge/stack-HTML%2FCSS%2FJS-orange)]()
 [![Storage](https://img.shields.io/badge/storage-localStorage-green)]()
 [![Responsive](https://img.shields.io/badge/responsive-62em%20%2F%2042em-purple)]()
@@ -12,12 +12,25 @@
 <br>
 
 This project is built for AO3 authors.  
-When AO3 is down, login is temporarily unavailable, or you want faster local iteration, this sandbox lets you draft and validate workskin behavior before posting.
+When AO3 is down, login is temporarily unavailable, or you want faster iteration, this sandbox lets you try it online or work locally and validate workskin behavior before posting.
 This project is implemented as a localized extension built on top of AO3's official open-source code published on GitHub, adapted for local author testing workflows.
 
-[Features](#features) · [Quick Start](#quick-start) · [Workflow](#workflow) · [Differences vs AO3](#differences-vs-ao3) · [Project Structure](#project-structure)
+[Online Demo](#online-demo) · [Features](#features) · [Quick Start](#quick-start) · [Workflow](#workflow) · [Differences vs AO3](#differences-vs-ao3) · [Project Structure](#project-structure)
 
 </div>
+
+---
+
+## Online Demo
+
+- Main page: <https://nymrarin.github.io/ao3-workskin-sandbox/>
+- Preview page: <https://nymrarin.github.io/ao3-workskin-sandbox/chapter-preview.html>
+
+Notes:
+
+- The GitHub Pages version works directly in the browser without downloading the repo first.
+- Drafts are still stored in the current browser's `localStorage`, so they do not sync across browsers, devices, or cleared storage.
+- `Rich Text` depends on the TinyMCE CDN. On GitHub Pages it will usually load normally, but if that CDN is blocked it will fall back to HTML editing mode.
 
 ---
 
@@ -109,6 +122,6 @@ ao3-workskin-sandbox/
 
 ## Notes
 
-- This is a local demo and not an official AO3 product.
+- This project supports both local use and GitHub Pages online use, and is not an official AO3 product.
 - Drafts are stored in browser localStorage; clearing storage or switching browsers loses visibility of saved drafts.
 - Keep an external backup of your writing.
