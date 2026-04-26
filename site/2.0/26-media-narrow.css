@@ -172,11 +172,9 @@ body .narrow-shown {
 }
 
 .comment .icon .anonymous {
-  background: url(../../images/imageset.png) no-repeat -75px -395px;
 }
 
 .comment .icon .visitor {
-  background: url(../../images/imageset.png) no-repeat -130px -395px;
 }
 
 .comment h4.byline {

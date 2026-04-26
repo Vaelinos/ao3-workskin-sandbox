@@ -42,15 +42,12 @@ user home, collections and challenges home, tag home, admin comms home
 }
 
 .skins .primary .icon {
-  background: url("/images/imageset.png") 0px -175px;
 }
 
 .admin .primary .icon {
-  background: url("/images/imageset.png") 100px -75px;
 }
 
 .tag .primary .icon, .tagset .primary .icon {
-  background: url("/images/imageset.png") 0px -275px;
 }
 
 .wrangler .primary .icon {

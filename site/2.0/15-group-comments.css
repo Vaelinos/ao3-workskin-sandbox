@@ -36,12 +36,10 @@ div.comment, li.comment {
 }
 
 .comment .icon .anonymous {
-  background: url("/images/imageset.png") no-repeat -0px -735px;
   display: block;
 }
 
 .comment .icon .visitor {
-  background: url("/images/imageset.png") no-repeat 0px -635px;
   display: block;
 }
 
@@ -105,11 +103,9 @@ fieldset.comments, .comment .userstuff {
 }
 
 .abbreviated .icon .anonymous {
-  background: url("/images/imageset.png") no-repeat -75px -450px;
 }
 
 .abbreviated .icon .visitor {
-  background: url("/images/imageset.png") no-repeat 0px -450px;
 }
 
 .abbreviated h4.byline {

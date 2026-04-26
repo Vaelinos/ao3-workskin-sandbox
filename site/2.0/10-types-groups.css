@@ -161,7 +161,6 @@ dl.index dd .userstuff p {
 /* TYPES */
 
 a.rss span {
-  background: url("/images/imageset.png") no-repeat -150px -275px;
   padding-left: 16px;
 }
 
@@ -203,7 +202,6 @@ span.series .position + .divider:after {
 }
 
 p.kudos {
-  background: url("/images/imageset.png") no-repeat -111px -580px;
   padding: 0.5em 0.5em 0.5em 60px;
   margin: 2em 0;
   min-height: 50px;
