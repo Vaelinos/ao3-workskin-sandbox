@@ -17,6 +17,14 @@
 
 [在线使用](#在线使用) · [功能概览](#功能概览) · [快速开始](#快速开始) · [使用流程](#使用流程) · [与 AO3 的差异](#与-ao3-的差异) · [项目结构](#项目结构) · [English](README_EN.md)
 
+<p align="center">
+  <a href="https://nymrarin.github.io/ao3-workskin-sandbox/">
+    <img src="./images/preview.gif" alt="AO3 Workskin Sandbox 在线预览动图" width="100%">
+  </a>
+</p>
+
+在线预览效果图：点击上面的 GIF 或直接打开 GitHub Pages 即可进入可交互页面。
+
 </div>
 
 ---
@@ -25,6 +33,7 @@
 
 - 直接打开：<https://nymrarin.github.io/ao3-workskin-sandbox/>
 - 预览页入口：<https://nymrarin.github.io/ao3-workskin-sandbox/chapter-preview.html>
+- 仓库页内可先看上方 `preview.gif` 动图，再进入在线页面实际操作
 
 说明：
 
