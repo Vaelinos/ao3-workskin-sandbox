@@ -4,7 +4,7 @@
 
 > An AO3-style editing and preview sandbox that works both locally and directly on GitHub Pages.
 
-[![Status](https://img.shields.io/badge/status-online%20available-brightgreen)](https://nymrarin.github.io/ao3-workskin-sandbox/)
+[![Status](https://img.shields.io/badge/status-online%20available-brightgreen)](https://vaelinos.github.io/ao3-workskin-sandbox/)
 [![Stack](https://img.shields.io/badge/stack-HTML%2FCSS%2FJS-orange)]()
 [![Storage](https://img.shields.io/badge/storage-localStorage-green)]()
 [![Responsive](https://img.shields.io/badge/responsive-62em%20%2F%2042em-purple)]()
@@ -18,7 +18,7 @@ This project is implemented as a localized extension built on top of AO3's offic
 [Online Demo](#online-demo) · [Features](#features) · [Quick Start](#quick-start) · [Workflow](#workflow) · [Differences vs AO3](#differences-vs-ao3) · [Project Structure](#project-structure)
 
 <p align="center">
-  <a href="https://nymrarin.github.io/ao3-workskin-sandbox/">
+  <a href="https://vaelinos.github.io/ao3-workskin-sandbox/">
     <img src="./images/preview.gif" alt="AO3 Workskin Sandbox animated preview" width="100%">
   </a>
 </p>
@@ -31,8 +31,8 @@ Preview the interface above, then click through to the live GitHub Pages site fo
 
 ## Online Demo
 
-- Main page: <https://nymrarin.github.io/ao3-workskin-sandbox/>
-- Preview page: <https://nymrarin.github.io/ao3-workskin-sandbox/chapter-preview.html>
+- Main page: <https://vaelinos.github.io/ao3-workskin-sandbox/>
+- Preview page: <https://vaelinos.github.io/ao3-workskin-sandbox/chapter-preview.html>
 - You can also view the `preview.gif` above on the repository page before opening the live site
 
 Notes:

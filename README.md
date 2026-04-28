@@ -4,7 +4,7 @@
 
 > AO3 风格编辑与预览沙盒，可在本地运行，也可直接在 GitHub Pages 在线使用。
 
-[![Status](https://img.shields.io/badge/status-online%20available-brightgreen)](https://nymrarin.github.io/ao3-workskin-sandbox/)
+[![Status](https://img.shields.io/badge/status-online%20available-brightgreen)](https://vaelinos.github.io/ao3-workskin-sandbox/)
 [![Stack](https://img.shields.io/badge/stack-HTML%2FCSS%2FJS-orange)]()
 [![Storage](https://img.shields.io/badge/storage-localStorage-green)]()
 [![Responsive](https://img.shields.io/badge/responsive-62em%20%2F%2042em-purple)]()
@@ -18,7 +18,7 @@
 [在线使用](#在线使用) · [功能概览](#功能概览) · [快速开始](#快速开始) · [使用流程](#使用流程) · [与 AO3 的差异](#与-ao3-的差异) · [项目结构](#项目结构) · [English](README_EN.md)
 
 <p align="center">
-  <a href="https://nymrarin.github.io/ao3-workskin-sandbox/">
+  <a href="https://vaelinos.github.io/ao3-workskin-sandbox/">
     <img src="./images/preview.gif" alt="AO3 Workskin Sandbox 在线预览动图" width="100%">
   </a>
 </p>
@@ -31,8 +31,8 @@
 
 ## 在线使用
 
-- 直接打开：<https://nymrarin.github.io/ao3-workskin-sandbox/>
-- 预览页入口：<https://nymrarin.github.io/ao3-workskin-sandbox/chapter-preview.html>
+- 直接打开：<https://vaelinos.github.io/ao3-workskin-sandbox/>
+- 预览页入口：<https://vaelinos.github.io/ao3-workskin-sandbox/chapter-preview.html>
 - 仓库页内可先看上方 `preview.gif` 动图，再进入在线页面实际操作
 
 说明：
