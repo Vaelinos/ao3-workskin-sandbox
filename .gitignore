@@ -1,4 +1,5 @@
 examples/
+.superpowers/brainstorm/
 
 # Dependencies / build output
 node_modules/
